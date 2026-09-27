@@ -1,0 +1,30 @@
+# Ignore local / sensitive artifacts
+
+# Never commit vendor extracts
+research/
+**/*.asar
+**/*.asar.unpacked/
+**/asar-extracts/
+
+# Local notes and Cursor wiring
+.notes/
+.cursor/
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+*.log
+*.swp
+*~
+
+# Dependency / build noise if experiments are added later
+node_modules/
+dist/
+out/
+.vite/
+.webpack/
+CHANGELOG.md
